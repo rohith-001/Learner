@@ -3,8 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql} from 'gatsby'
-import HeroSection from "../../.cache/Reuseable/HeroSection"
-import Infoblock from "../../.cache/Reuseable/Infoblock"
+import HeroSection from "../components/Reuseable/HeroSection"
+import Infoblock from "../components/Reuseable/Infoblock"
 
 const IndexPage = ({data}) => (
   <Layout>

@@ -7,8 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Footer from "../../.cache/Reuseable/Footer.js"
-import Navbar from "../../.cache/Reuseable/Navbar.js"
+import Footer from "./Reuseable/Footer.js"
+import Navbar from "./Reuseable/Navbar.js"
 
 import "./bootstrap.min.css"
 import "./layout.css"
