@@ -6,12 +6,26 @@ body{
   background-image: linear-gradient(90deg, #020024 0%, #f72323 35%, #ff004e 100%);
 }
 
+.bg-card{
+  background-color: #303030;
+  color: white;
+  padding-top: 10px;
+}
+
 .icon-i {
   font-size: 1.2em;
 }
 
 .hero-background{
   min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-background{
+  min-height:30vh;
   display: flex;
   justify-content: center;
   align-items: center;

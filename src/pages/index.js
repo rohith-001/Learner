@@ -5,6 +5,8 @@ import SEO from "../components/seo"
 import { graphql} from 'gatsby'
 import HeroSection from "../components/Reuseable/HeroSection"
 import Infoblock from "../components/Reuseable/Infoblock"
+import DualInfoBlock from "../components/Reuseable/DualInfoBlock"
+import Coursecart from "../components/Reuseable/Card/Coursecart"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -15,7 +17,9 @@ const IndexPage = ({data}) => (
       subtitle="LearnCodeOnline.in"
       heroclass="hero-background"
     />
-    <Infoblock heaing="About us"/>
+    <Infoblock heading="About us"/>
+    <Coursecart courses={data.courses}/>
+    <DualInfoBlock heading="Our team"/>
   </Layout>
 )
 
@@ -26,6 +30,24 @@ export const query = graphql`
       ...GatsbyImageSharpFluid_tracedSVG
     }
   }
+}
+  courses:allContentfulCourses{
+    edges{
+      node{
+        id
+        title
+        price
+        category
+        description{
+          description
+        }
+        image{
+          fixed(width:200, height:120){
+            ...GatsbyContentfulFixed_tracedSVG
+          }
+        }
+      }
+    }
 }
 }`
 
