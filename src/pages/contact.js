@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react"
 
 import Layout from "../components/layout"
@@ -6,6 +5,8 @@ import SEO from "../components/seo"
 import {graphql} from 'gatsby'
 import HeroSection from "../components/Reuseable/HeroSection"
 import Infoblock from "../components/Reuseable/Infoblock"
+import Contact from "../components/Reuseable/Contact/contact"
+
 
 const ContactPage = ({data}) => (
   <Layout>
@@ -17,6 +18,7 @@ const ContactPage = ({data}) => (
       heroclass="about-background"
     />
     <Infoblock heading="How can we helop"/>
+    <Contact />
   </Layout>
 )
 
