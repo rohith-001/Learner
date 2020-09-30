@@ -5,8 +5,8 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <div className="footer-block bg-light"> 
-                    <div className="container-fluid"> 
+                <div className="footer-block bg-light">
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col-6 mt-1 text-right">
                                 <h6>Devloped by </h6>

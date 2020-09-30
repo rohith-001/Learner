@@ -17,11 +17,11 @@ export default function Bundle({bundle}) {
                                                 <h6 className="mb-0">{node.title}</h6>
                                                 <h6 className="mb-0">${node.price}</h6>
                                             </div>
-                                            <button className="btn btn-primary mt-4 snipcart-add-item"
+                                            <button className="btn btn-primary mt-1 mt-md-4 snipcart-add-item"
                                               data-item-id={node.id}
                                               data-item-name={node.title}
                                               data-item-price={node.price}
-                                              data-item-url="https://minimalism-opc.netlify.app/"
+                                              data-item-url="https://uxunicorn-learner.netlify.app/"
                                               data-item-image={node.image.fixed.src}
                                             >Join now</button>
                                         </div>
