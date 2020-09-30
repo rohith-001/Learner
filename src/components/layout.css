@@ -1,31 +1,46 @@
-body{
-  background-color: #121212;
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0;
+  outline-color: transparent;
+  outline-width: 0;
+  outline-style: none;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
 }
 
-.bg-theme{
-  background-image: linear-gradient(90deg, #020024 0%, #f72323 35%, #ff004e 100%);
+.form-control,
+.form-control:focus {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  border: rgba(255, 255, 255, 0);
 }
 
-.bg-card{
-  background-color: #303030;
-  color: white;
-  padding-top: 10px;
+body {
+  overflow-x: hidden;
+  background-color: #f1f4f9;
 }
+
 
 .icon-i {
   font-size: 1.2em;
 }
 
-.hero-background{
-  min-height:100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.about-background{
-  min-height:30vh;
+.hero-background {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +49,16 @@ body{
 
 @media all and (max-width: 600px) {
   .navi {
-  width: 100%;
-   text-align: right;
-   padding-right: 12px;
+    width: 100%;
+    text-align: center;
   }
+}
+
+.Primary__font {
+  font-weight: 1000;
+  font-size: 60px;
+}
+
+.secondary__font {
+  font-weight: 600;
 }

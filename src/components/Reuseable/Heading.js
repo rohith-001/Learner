@@ -4,7 +4,7 @@ export default function Heading({title}) {
     return (
         <div className="row">
         <div className="col text-center mb-4">
-        <h1 className="display-3 text-white">{title}</h1>
+        <h1 className="display-3 secondary__font">{title}</h1>
         </div>
         </div>
     )
