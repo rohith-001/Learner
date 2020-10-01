@@ -37,7 +37,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-sm bg-white fixed-top text-white">
-                <Link to="/" className="navbar-brand ml-5">
+                <Link to="/" className="navbar-brand ml-3 ml-md-5">
                     <img src={logo} alt="logo goes here" width="90px"/>
                 </Link>
                     <button className="navbar-toggler"  type="button"   onClick={this.myToggler}>
